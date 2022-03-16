@@ -1,1 +1,4 @@
 Repositório para realização de exercícios semanais da turma NDD no curso DEVin ministrado pelo SENAI.
+
+A realização dos exercícios está separada por pastas em suas devidas organizações. No módulo 01, contém os exercícios realizados durante o primeiro módulo do curso, dentro dele, a divisão de semanas e de exercícios por projetos. Semanas com divisões de exercícios em blocos são equivalentes a projetos realizados.
+Dentro de cada projeto é possível encontrar um documento "README.md", nele está a descrição dos exercícios com seus objetivos. A distribuição dos exercícios foi originalmente feita por Trello, assim a estrutura dos mesmos pode ser vista como "cards".
