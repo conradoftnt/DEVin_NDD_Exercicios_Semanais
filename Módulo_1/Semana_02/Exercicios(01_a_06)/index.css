@@ -1,0 +1,200 @@
+* {
+  margin: 0px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: azure;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #4d4d4d;
+  overflow: hidden;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 14px;
+  font-size: 14px;
+  float: left;
+}
+
+.navbar img {
+  width: 30px;
+  padding: 6px;
+  float: left;
+}
+
+.navbar .search_container {
+  float: right;
+}
+
+.navbar .search_container form #search {
+  margin: 10px 0px;
+}
+
+.navbar .search_container form button {
+  cursor: pointer;
+  float: right;
+  padding: 1px 1px 2px 2px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.navbar .search_container form button img {
+  padding: 0px;
+  width: 16px;
+}
+
+.content {
+  margin-top: 44.5px;
+}
+
+.content .featured_event {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #dfc8aa;
+  width: 100%;
+  border: 1px solid #2b2b2b;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
+.content .featured_event img {
+  width: 30%;
+  margin: 8px;
+  border: 1px solid #2b2b2b;
+  border-radius: 2px;
+}
+
+.content .featured_event .featured_event_content {
+  width: 70%;
+}
+
+.content .featured_event .featured_event_content h2 {
+  margin: 8px;
+}
+
+.content .featured_event .featured_event_content p {
+  margin: 8px;
+}
+
+.content .list_event {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 2%;
+}
+
+.content .list_event .list_event_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #dfc8aa;
+  width: 32.8%;
+  margin: 4px 0px 0px 0.38%;
+  border: 1px solid #2b2b2b;
+  border-radius: 4px;
+}
+
+.content .list_event .list_event_item img {
+  width: 30%;
+  margin: 4px;
+  border: 1px solid #2b2b2b;
+  border-radius: 2px;
+}
+
+.content .list_event .list_event_item .list_event_item_content {
+  width: 70%;
+}
+
+.content .list_event .list_event_item .list_event_item_content h3 {
+  font-size: 16px;
+  margin: 4px;
+}
+
+.content .list_event .list_event_item .list_event_item_content p {
+  font-size: 12px;
+  margin: 4px;
+}
+
+.content .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content .contact span {
+  text-align: center;
+  margin: 2% 0%;
+}
+
+.content .contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .contact form #sendContact {
+  margin-top: 2%;
+}
+
+.content .contact form input {
+  width: 40%;
+}
+
+.content .contact form textarea {
+  width: 40%;
+  height: 100px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2%;
+  background-color: #4d4d4d;
+  color: #f0f0f0;
+}
+
+footer img {
+  width: 7.5%;
+  margin: 1%;
+}
+
+footer .infosContact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 12px;
+  width: 100%;
+}
+
+footer .infosContact span {
+  margin: 1%;
+}
+/*# sourceMappingURL=index.css.map */
