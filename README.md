@@ -1,0 +1,1 @@
+Repositório para realização de exercícios semanais da turma NDD no curso DEVin ministrado pelo SENAI.
