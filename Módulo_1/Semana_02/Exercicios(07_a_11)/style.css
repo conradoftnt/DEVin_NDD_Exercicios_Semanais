@@ -3,4 +3,10 @@
   border-radius: 0.25rem;
   padding: 0rem 0.5rem 0rem 1rem;
 }
+
+.modal_button {
+  background: #8cc6f0;
+  color: #1f1f1f;
+  border-color: #99b8ce;
+}
 /*# sourceMappingURL=style.css.map */
