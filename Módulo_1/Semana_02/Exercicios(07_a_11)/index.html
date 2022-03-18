@@ -1,347 +1,357 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="style.css" />
-        <link rel="shortcut icon" href="./Imagens/fav_icon.png" type="image/x-icon">
-        <title>M01S02 Ex07-11</title>
-    </head>
 
-    <body style="background-color: #daddfc;">
-        <header
-            class="navbar navbar-light d-flex"
-            style="background-color: #8cc6f0;"
-        >
-            <nav class="d-flex">
-                <a class="navbar-brand d-flex" href="./index.html">
-                    <img
-                        src="./Imagens/page_icon.png"
-                        alt="page_icon"
-                        class="img-fluid ms-1 me-1"
-                        style="width: 2.156rem"
-                    />
-                    <h1 class="navbar-brand me-0 mb-0">Fly Away</h1>
-                </a>
-            </nav>
-            <div class="d-flex">
-                <input
-                    type="search"
-                    class="form-control navbar-brand"
-                    style="width: 10rem"
-                    placeholder="Pesquisar..."
-                />
-                <input
-                    type="date"
-                    class="data-filter-control navbar-brand"
-                    id="date_filter"
-                />
-                <button type="button" class="btn btn-light navbar-brand">
-                    <img
-                        src="./Imagens/filter_icon.png"
-                        alt="filter_icon"
-                        style="width: 1.8rem"
-                    />
-                </button>
-            </div>
-        </header>
-        <main class="container-md" >
-            <div class="row mt-2">
-                <div class="col-4">
-                    <div class="card mb-2">
-                        <img
-                            src="./Imagens/salmon_hunt.jpg"
-                            alt="Corrida do Salmão"
-                            class="card-img-top img-fluid"
-                            style="height: 17rem;"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Corrida do Salmão</h5>
-                            <p class="card-text">
-                                <ul>
-                                    <li>Cantar com ursos</li>
-                                    <li>Comer salmões</li>
-                                    <li>Contar histórias</li>
-                                </ul>
-                            </p>
-                            <span class="card-text text-start fw-bold" style="color: #287511; width: 66%;">Ser pego em uma armadilha de caçador</span>
-                            <br>
-                            <button type="button" class="btn btn-primary mt-2 modal_button" data-bs-toggle="modal" data-bs-target="#salmonModal">Saiba mais</button>
-                            <div class="modal fade" id="salmonModal" tabindex="-1" aria-labelledby="salmonModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./Imagens/fav_icon.png" type="image/x-icon">
+    <title>M01S02 Ex07-11</title>
+</head>
+
+<body style="background-color: #daddfc;">
+    <header class="navbar navbar-light d-flex" style="background-color: #8cc6f0;">
+        <nav class="d-flex">
+            <a class="navbar-brand d-flex" href="./index.html">
+                <img src="./Imagens/page_icon.png" alt="page_icon" class="img-fluid ms-1 me-1"
+                    style="width: 2.156rem" />
+                <h1 class="navbar-brand me-0 mb-0">Fly Away</h1>
+            </a>
+        </nav>
+        <div class="d-flex">
+            <input type="search" class="form-control navbar-brand" style="width: 10rem" placeholder="Pesquisar..." />
+            <input type="date" class="data-filter-control navbar-brand" id="date_filter" />
+            <button type="button" class="btn btn-light navbar-brand">
+                <img src="./Imagens/filter_icon.png" alt="filter_icon" style="width: 1.8rem" />
+            </button>
+        </div>
+    </header>
+    <main class="container-md">
+        <div class="row mt-2">
+            <div class="col-4">
+                <div class="card mb-2">
+                    <img src="./Imagens/salmon_hunt.jpg" alt="Corrida do Salmão" class="card-img-top img-fluid"
+                        style="height: 17rem;" />
+                    <div class="card-body">
+                        <h5 class="card-title">Corrida do Salmão</h5>
+                        <p class="card-text">
+                        <ul>
+                            <li>Cantar com ursos</li>
+                            <li>Comer salmões</li>
+                            <li>Contar histórias</li>
+                        </ul>
+                        </p>
+                        <span class="card-text text-start fw-bold" style="color: #287511; width: 66%;">Ser pego em uma
+                            armadilha de caçador</span>
+                        <br>
+                        <button type="button" class="btn btn-primary mt-2 modal_button" data-bs-toggle="modal"
+                            data-bs-target="#salmonModal">Saiba mais</button>
+                        <div class="modal fade" id="salmonModal" tabindex="-1" aria-labelledby="salmonModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
                                         <h5 class="modal-title" id="salmonModalLabel">Corrida do Salmão</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                      </div>
-                                      <div class="modal-body">
-                                        <p>Lugar onde os salmões sobem a correnteza e os ursos aproveitam para festar e banquetear.
-                                            <p>Inclui: </p>
-                                            <ul>
-                                                <li>Cantar com ursos</li>
-                                                <li>Comer salmões</li>
-                                                <li>Contar histórias</li>
-                                            </ul>
-                                        </p>
-                                      </div>
-                                      <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                                        <button type="button" class="btn btn-primary modal_button">Continuar</button>
-                                      </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
                                     </div>
-                                  </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card mb-2">
-                        <img
-                            src="./Imagens/monster_door.jpg"
-                            alt="Mundo dos Monstros"
-                            class="card-img-top img-fluid"
-                            style="height: 17rem;"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Mundo dos Monstros</h5>
-                            <p class="card-text">
-                                <ul>
-                                    <li>Brincar de esconde esconde</li>
-                                    <li>Destruir um restaurante</li>
-                                    <li>Ser perseguido até a morte</li>
-                                </ul>
-                            </p>
-                            <span class="card-text text-end fw-bold" style="color: #287511;">Rir ou gritar como uma criança</span>
-                            <br>
-                            <button type="button" class="btn btn-primary mt-2 modal_button" data-bs-toggle="modal" data-bs-target="#monsterModal">Saiba mais</button>
-                            <div class="modal fade" id="monsterModal" tabindex="-1" aria-labelledby="monsterModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <h5 class="modal-title" id="monsterModalLabel">Corrida do Salmão</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                      </div>
-                                      <div class="modal-body">
-                                        <p>Dimensão alternativa onde monstros usam a energia gerada pelo grito/riso de crianças para sustentar a eletricidade de suas cidades.
-                                            <p>Inclui: </p>
-                                            <ul>
-                                                <li>Brincar de esconde esconde</li>
-                                                <li>Destruir um restaurante</li>
-                                                <li>Ser perseguido até a morte</li>
-                                            </ul>
+                                    <div class="modal-body">
+                                        <p>Lugar onde os salmões sobem a correnteza e os ursos aproveitam para festar e
+                                            banquetear.
+                                        <p>Inclui: </p>
+                                        <ul>
+                                            <li>Cantar com ursos</li>
+                                            <li>Comer salmões</li>
+                                            <li>Contar histórias</li>
+                                        </ul>
                                         </p>
-                                      </div>
-                                      <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                                        <button type="button" class="btn btn-primary modal_button">Continuar</button>
-                                      </div>
+                                        <span>Preço:</span>
+                                        <span class="text-start fw-bold" style="color: #287511; width: 66%;">Ser pego em
+                                            uma armadilha de caçador</span>
                                     </div>
-                                  </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card mb-2">
-                        <img
-                            src="./Imagens/arabia.jpg"
-                            alt="Arabia"
-                            class="card-img-top img-fluid"
-                            style="height: 17rem;"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Arábia</h5>
-                            <p class="card-text">
-                                <ul>
-                                    <li>Viajem de tapete</li>
-                                    <li>Fazer parkour</li>
-                                    <li>3 desejos</li>
-                                </ul>
-                            </p>
-                            <span class="card-text text-end fw-bold" style="color: #287511;">Esfregar uma lâmpada</span>
-                            <br>
-                            <button type="button" class="btn btn-primary mt-2 modal_button" data-bs-toggle="modal" data-bs-target="#arabiaModal">Saiba mais</button>
-                            <div class="modal fade" id="arabiaModal" tabindex="-1" aria-labelledby="arabiaModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <h5 class="modal-title" id="arabiaModalLabel">Corrida do Salmão</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                      </div>
-                                      <div class="modal-body">
-                                        <p>País onde é possível a realização de parkour e ter um macaco e gênios de estimação. Além de ficar rico magicante.
-                                            <p>Inclui: </p>
-                                            <ul>
-                                                <li>Viajem de tapete</li>
-                                                <li>Fazer parkour</li>
-                                                <li>3 desejos</li>
-                                            </ul>
-                                        </p>
-                                      </div>
-                                      <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
                                         <button type="button" class="btn btn-primary modal_button">Continuar</button>
-                                      </div>
                                     </div>
-                                  </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card mb-2">
-                        <img
-                            src="./Imagens/jungle.jpg"
-                            alt="Selva"
-                            class="card-img-top img-fluid"
-                            style="height: 17rem;"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Selva</h5>
-                            <p class="card-text">
-                                <ul>
-                                    <li>Ser adotado por uma gorila</li>
-                                    <li>Ser caçado por uma onça</li>
-                                    <li>Virar amigo de um elefante</li>
-                                </ul>
-                            </p>
-                            <span class="card-text text-end fw-bold" style="color: #287511;">Seu barco ser incendiado</span>
-                            <br>
-                            <button type="button" class="btn btn-primary mt-2 modal_button" data-bs-toggle="modal" data-bs-target="#jungleModal">Saiba mais</button>
-                            <div class="modal fade" id="jungleModal" tabindex="-1" aria-labelledby="jungleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <h5 class="modal-title" id="jungleModalLabel">Corrida do Salmão</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                      </div>
-                                      <div class="modal-body">
-                                        <p>Lugar onde é possível: lutar com onças, lutar com cobras, lutar com gorilas, lutar com elefantes, lutar com humanos e etc.
-                                            <p>Inclui: </p>
-                                            <ul>
-                                                <li>Ser adotado por uma gorila</li>
-                                                <li>Ser caçado por uma onça</li>
-                                                <li>Virar amigo de um elefante</li>
-                                            </ul>
-                                        </p>
-                                      </div>
-                                      <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                                        <button type="button" class="btn btn-primary modal_button">Continuar</button>
-                                      </div>
-                                    </div>
-                                  </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card mb-2">
-                        <img
-                            src="./Imagens/kings_stone.jpeg"
-                            alt="Pedra do Rei"
-                            class="card-img-top img-fluid"
-                            style="height: 17rem;"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Pedra do Rei</h5>
-                            <p class="card-text">
-                                <ul>
-                                    <li>Ser acusado pela morte de seu pai</li>
-                                    <li>Comer insetos com um suricato</li>
-                                    <li>Lutar até a morte com seu tio</li>
-                                </ul>
-                            </p>
-                            <span class="card-text text-end fw-bold" style="color: #287511;">Ser herdeiro do reino</span>
-                            <br>
-                            <button type="button" class="btn btn-primary mt-2 modal_button" data-bs-toggle="modal" data-bs-target="#stoneModal">Saiba mais</button>
-                            <div class="modal fade" id="stoneModal" tabindex="-1" aria-labelledby="stoneModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <h5 class="modal-title" id="stoneModalLabel">Corrida do Salmão</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                      </div>
-                                      <div class="modal-body">
-                                        <p>Local onde crianças com marcas feitas por um babuíno são expostas a grandes alturas. Também é possível encontrar hienas esfomeadas que são ignoradas pelos que reinam na região.
-                                            <p>Inclui: </p>
-                                            <ul>
-                                                <li>Ser acusado pela morte de seu pai</li>
-                                                <li>Comer insetos com um suricato</li>
-                                                <li>Lutar até a morte com seu tio</li>
-                                            </ul>
-                                        </p>
-                                      </div>
-                                      <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                                        <button type="button" class="btn btn-primary modal_button">Continuar</button>
-                                      </div>
-                                    </div>
-                                  </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card mb-2">
-                        <img
-                            src="./Imagens/car_race.jpg"
-                            alt="Copa Pistão"
-                            class="card-img-top img-fluid"
-                            style="height: 17rem;"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Copa Pistão</h5>
-                            <p class="card-text">
-                                <ul>
-                                    <li>Virar a velociade</li>
-                                    <li>Virar um relâmpago</li>
-                                    <li>Comer derrotados no café da manhã</li>
-                                </ul>
-                            </p>
-                            <span class="card-text text-end fw-bold" style="color: #287511;">Ser um carro</span>
-                            <br>
-                            <button type="button" class="btn btn-primary mt-2 modal_button" data-bs-toggle="modal" data-bs-target="#pistonModal">Saiba mais</button>
-                            <div class="modal fade" id="pistonModal" tabindex="-1" aria-labelledby="pistonModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <h5 class="modal-title" id="pistonModalLabel">Corrida do Salmão</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                      </div>
-                                      <div class="modal-body">
-                                        <p>Corrida mais esperada do ano em que o vencedor ganha uma taça vazia e um contrato com a Dinoco. Em alguns casos, corredores se perdem em cidades do interior e aprendem o sentido da vida.
-                                            <p>Inclui: </p>
-                                            <ul>
-                                                <li>Virar a velociade</li>
-                                                <li>Virar um relâmpago</li>
-                                                <li>Comer derrotados no café da manhã</li>
-                                            </ul>
-                                        </p>
-                                      </div>
-                                      <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                                        <button type="button" class="btn btn-primary modal_button">Continuar</button>
-                                      </div>
-                                    </div>
-                                  </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+            <div class="col-4">
+                <div class="card mb-2">
+                    <img src="./Imagens/monster_door.jpg" alt="Mundo dos Monstros" class="card-img-top img-fluid"
+                        style="height: 17rem;" />
+                    <div class="card-body">
+                        <h5 class="card-title">Mundo dos Monstros</h5>
+                        <p class="card-text">
+                        <ul>
+                            <li>Brincar de esconde esconde</li>
+                            <li>Destruir um restaurante</li>
+                            <li>Ser perseguido até a morte</li>
+                        </ul>
+                        </p>
+                        <span class="card-text text-end fw-bold" style="color: #287511;">Rir ou gritar como uma
+                            criança</span>
+                        <br>
+                        <button type="button" class="btn btn-primary mt-2 modal_button" data-bs-toggle="modal"
+                            data-bs-target="#monsterModal">Saiba mais</button>
+                        <div class="modal fade" id="monsterModal" tabindex="-1" aria-labelledby="monsterModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="monsterModalLabel">Mundo dos Monstros</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Dimensão alternativa onde monstros usam a energia gerada pelo grito/riso de
+                                            crianças para sustentar a eletricidade de suas cidades.
+                                        <p>Inclui: </p>
+                                        <ul>
+                                            <li>Brincar de esconde esconde</li>
+                                            <li>Destruir um restaurante</li>
+                                            <li>Ser perseguido até a morte</li>
+                                        </ul>
+                                        </p>
+                                        <span>Preço:</span>
+                                        <span class="text-start fw-bold" style="color: #287511; width: 66%;">Rir ou
+                                            gritar como uma criança</span>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                        <button type="button" class="btn btn-primary modal_button">Continuar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card mb-2">
+                    <img src="./Imagens/arabia.jpg" alt="Arabia" class="card-img-top img-fluid"
+                        style="height: 17rem;" />
+                    <div class="card-body">
+                        <h5 class="card-title">Arábia</h5>
+                        <p class="card-text">
+                        <ul>
+                            <li>Viajem de tapete</li>
+                            <li>Fazer parkour</li>
+                            <li>3 desejos</li>
+                        </ul>
+                        </p>
+                        <span class="card-text text-end fw-bold" style="color: #287511;">Esfregar uma lâmpada</span>
+                        <br>
+                        <button type="button" class="btn btn-primary mt-2 modal_button" data-bs-toggle="modal"
+                            data-bs-target="#arabiaModal">Saiba mais</button>
+                        <div class="modal fade" id="arabiaModal" tabindex="-1" aria-labelledby="arabiaModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="arabiaModalLabel">Arábia</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>País onde é possível a realização de parkour e ter um macaco e gênios de
+                                            estimação. Além de ficar rico magicante.
+                                        <p>Inclui: </p>
+                                        <ul>
+                                            <li>Viajem de tapete</li>
+                                            <li>Fazer parkour</li>
+                                            <li>3 desejos</li>
+                                        </ul>
+                                        </p>
+                                        <span>Preço:</span>
+                                        <span class="text-start fw-bold" style="color: #287511; width: 66%;">Esfregar
+                                            uma lâmpada</span>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                        <button type="button" class="btn btn-primary modal_button">Continuar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card mb-2">
+                    <img src="./Imagens/jungle.jpg" alt="Selva" class="card-img-top img-fluid" style="height: 17rem;" />
+                    <div class="card-body">
+                        <h5 class="card-title">Selva</h5>
+                        <p class="card-text">
+                        <ul>
+                            <li>Ser adotado por uma gorila</li>
+                            <li>Ser caçado por uma onça</li>
+                            <li>Virar amigo de um elefante</li>
+                        </ul>
+                        </p>
+                        <span class="card-text text-end fw-bold" style="color: #287511;">Seu barco ser incendiado</span>
+                        <br>
+                        <button type="button" class="btn btn-primary mt-2 modal_button" data-bs-toggle="modal"
+                            data-bs-target="#jungleModal">Saiba mais</button>
+                        <div class="modal fade" id="jungleModal" tabindex="-1" aria-labelledby="jungleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="jungleModalLabel">Selva</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Lugar onde é possível: lutar com onças, lutar com cobras, lutar com gorilas,
+                                            lutar com elefantes, lutar com humanos e etc.
+                                        <p>Inclui: </p>
+                                        <ul>
+                                            <li>Ser adotado por uma gorila</li>
+                                            <li>Ser caçado por uma onça</li>
+                                            <li>Virar amigo de um elefante</li>
+                                        </ul>
+                                        </p>
+                                        <span>Preço:</span>
+                                        <span class="text-start fw-bold" style="color: #287511; width: 66%;">Seu barco
+                                            ser incendiado</span>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                        <button type="button" class="btn btn-primary modal_button">Continuar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card mb-2">
+                    <img src="./Imagens/kings_stone.jpeg" alt="Pedra do Rei" class="card-img-top img-fluid"
+                        style="height: 17rem;" />
+                    <div class="card-body">
+                        <h5 class="card-title">Pedra do Rei</h5>
+                        <p class="card-text">
+                        <ul>
+                            <li>Ser acusado pela morte de seu pai</li>
+                            <li>Comer insetos com um suricato</li>
+                            <li>Lutar até a morte com seu tio</li>
+                        </ul>
+                        </p>
+                        <span class="card-text text-end fw-bold" style="color: #287511;">Ser herdeiro do reino</span>
+                        <br>
+                        <button type="button" class="btn btn-primary mt-2 modal_button" data-bs-toggle="modal"
+                            data-bs-target="#stoneModal">Saiba mais</button>
+                        <div class="modal fade" id="stoneModal" tabindex="-1" aria-labelledby="stoneModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="stoneModalLabel">Pedra do Rei</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Local onde crianças com marcas feitas por um babuíno são expostas a grandes
+                                            alturas. Também é possível encontrar hienas esfomeadas que são ignoradas
+                                            pelos que reinam na região.
+                                        <p>Inclui: </p>
+                                        <ul>
+                                            <li>Ser acusado pela morte de seu pai</li>
+                                            <li>Comer insetos com um suricato</li>
+                                            <li>Lutar até a morte com seu tio</li>
+                                        </ul>
+                                    </p>
+                                    <span>Preço:</span>
+                                    <span class="text-start fw-bold" style="color: #287511; width: 66%;">Ser herdeiro do
+                                        reino</span>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                        <button type="button" class="btn btn-primary modal_button">Continuar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card mb-2">
+                    <img src="./Imagens/car_race.jpg" alt="Copa Pistão" class="card-img-top img-fluid"
+                        style="height: 17rem;" />
+                    <div class="card-body">
+                        <h5 class="card-title">Copa Pistão</h5>
+                        <p class="card-text">
+                        <ul>
+                            <li>Virar a velociade</li>
+                            <li>Virar um relâmpago</li>
+                            <li>Comer derrotados no café da manhã</li>
+                        </ul>
+                        </p>
+                        <span class="card-text text-end fw-bold" style="color: #287511;">Ser um carro</span>
+                        <br>
+                        <button type="button" class="btn btn-primary mt-2 modal_button" data-bs-toggle="modal"
+                            data-bs-target="#pistonModal">Saiba mais</button>
+                        <div class="modal fade" id="pistonModal" tabindex="-1" aria-labelledby="pistonModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="pistonModalLabel">Copa Pistão</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Corrida mais esperada do ano em que o vencedor ganha uma taça vazia e um
+                                            contrato com a Dinoco. Em alguns casos, corredores se perdem em cidades do
+                                            interior e aprendem o sentido da vida.
+                                        <p>Inclui: </p>
+                                        <ul>
+                                            <li>Virar a velociade</li>
+                                            <li>Virar um relâmpago</li>
+                                            <li>Comer derrotados no café da manhã</li>
+                                        </ul>
+                                    </p>
+                                    <span>Preço:</span>
+                                    <span class="text-start fw-bold" style="color: #287511; width: 66%;">Ser um
+                                        carro</span>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                        <button type="button" class="btn btn-primary modal_button">Continuar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="py-2 ps-2 mt-3 border-top" style="background-color: #8cc6f0;">
+        <div class="col-md-4 d-flex align-items-center">
+            <img src="./Imagens/page_icon.png" alt="page_icon" style="width: 4.5rem" class="me-1">
+            <span class="text-muted">© 2022 Conrado Fortunato <br>conradofortunato246@gmail.com <br>Brasil, Santa
+                Catarina, Florianópolis</span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
