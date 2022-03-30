@@ -11,7 +11,7 @@ class Produto {
     }
 }
 
-class Pedidos {
+class Pedido {
     numeroPedido;
     dataPedido = new Date().toLocaleDateString();
     estaPago = false;
