@@ -1,4 +1,8 @@
 class Produto {
+    nome;
+    preco;
+    emEstoque;
+    quantidade;
     constructor(nome, preco, emEstoque, quantidade){
         this.nome = nome;
         this.preco = preco;
