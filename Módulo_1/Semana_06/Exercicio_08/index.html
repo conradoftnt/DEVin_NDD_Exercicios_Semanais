@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            table {
+                margin-top: 10px;
+            }
+            td {
+                border: 1px solid black;
+                padding: 3px;
+            }
+        </style>
+        <title>M01S06E08</title>
+    </head>
+    <body>
+        <p>Para buscar o CEP de um endereço:</p>
+        <input
+            id="UF"
+            type="text"
+            placeholder="Digite a unidade federativa (UF)..."
+        />
+        <input id="cidade" type="text" placeholder="Digite a cidade..." />
+        <input id="rua" type="text" placeholder="Digite o logradouro/rua..." />
+        <button onclick="consultarEndereco()">Consultar</button>
+        <div id="resposta"></div>
+        <script src="app.js"></script>
+    </body>
+</html>
