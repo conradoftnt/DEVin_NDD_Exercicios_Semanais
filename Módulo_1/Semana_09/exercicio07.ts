@@ -1,18 +1,14 @@
-class Pessoa {
+interface Pessoa {
     nome: string;
     idade: number;
     rua: string;
-    cadastrar() {
-        console.log(this);
-    }
-    constructor(nome: string, idade: number, rua: string) {
-        this.nome = nome;
-        this.idade = idade;
-        this.rua = rua;
-    }
+    cadastrar(): void;
 }
 
-class Aluno extends Pessoa {
+class Aluno implements Pessoa {
+    nome: string;
+    idade: number;
+    rua: string;
     matricula: number;
     cadeiras: string[];
     constructor(
@@ -22,13 +18,21 @@ class Aluno extends Pessoa {
         matricula: number,
         cadeiras: string[],
     ) {
-        super(nome, idade, rua);
+        this.nome = nome;
+        this.idade = idade;
+        this.rua = rua;
         this.matricula = matricula;
         this.cadeiras = cadeiras;
     }
+    cadastrar(): void {
+        console.log(this);
+    }
 }
 
-class Funcionario extends Pessoa {
+class Funcionario implements Pessoa {
+    nome: string;
+    idade: number;
+    rua: string;
     identificador: number;
     setor: string;
     constructor(
@@ -38,8 +42,13 @@ class Funcionario extends Pessoa {
         identificador: number,
         setor: string,
     ) {
-        super(nome, idade, rua);
+        this.nome = nome;
+        this.idade = idade;
+        this.rua = rua;
         this.identificador = identificador;
         this.setor = setor;
+    }
+    cadastrar(): void {
+        console.log(this);
     }
 }
