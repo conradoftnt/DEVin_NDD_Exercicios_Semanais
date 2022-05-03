@@ -82,9 +82,7 @@ Crie um arquivo chamado exercicio09.ts crie uma interface chamada **Produto**, n
 
 -   No html do component ( app.component.html ) apague todo o código e cole esse código:
 
-<h2>
-  		Total da compra: {{ valorTotal }}
-</h2>
+`<h2> Total da compra: {{ valorTotal }} </h2>`
 
 -   Criar a variável _valorTotal_ do tipo number no _app.component.ts_
 -   A classe no _app.component.ts_ deve ser implementada com a interface que criamos no arquivo exercicio09.ts, ou seja, faça a importação correta na classe.
