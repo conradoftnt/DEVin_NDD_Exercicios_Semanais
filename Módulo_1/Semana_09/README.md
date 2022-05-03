@@ -59,14 +59,14 @@ Depois da construção das classes e métodos, deposite 3500 reais chamando a fu
 
 ## [M1S09] - Ex 7 - Interfaces e Módulos
 
-Em um arquivo chamado exercicio07.ts crie uma interface chamada **Pessoa** com os seguintes atributos: _nome_ do tipo string, _idade_ do tipo numérico, _rua_ do tipo string. Além disso, crie um método chamado _cadastrar()_.
+Em um arquivo chamado exercicio07.ts crie uma classe chamada **Pessoa** com os seguintes atributos: _nome_ do tipo string, _idade_ do tipo numérico, _rua_ do tipo string. Além disso, crie um método chamado _cadastrar()_.
 
 As classes **Aluno** e **Funcionario** que irá ser implementada pela classe **Pessoa** e terão os seguintes atributos:
 
 **Aluno** - _matricula_ do tipo numérico e _cadeiras_ do tipo array de strings.
 **Funcionario** - _identificador_ do tipo numérico e _setor_ do tipo string.
 
-O exercício consiste em implementar o método requerido pela interface **Pessoa** às classes **Aluno** e **Funcionario**. O método deverá imprimir em um console.log todas as informações sobre o aluno e funcionário cadastrado.
+O exercício consiste em implementar o método requerido pela classe **Pessoa** às classes **Aluno** e **Funcionario**. O método deverá imprimir em um console.log todas as informações sobre o aluno e funcionário cadastrado.
 
 ---
 
