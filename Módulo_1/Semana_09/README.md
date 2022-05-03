@@ -38,8 +38,6 @@ Crie um arquivo typescript com o nome exercicio04.ts, nele crie uma classe chama
 Crie um arquivo typescript com o nome exercicio05.ts, nele siga as instruções abaixo;
 Para treinar o uso de construtores crie uma classe chamada **Animal** com os atributos **nome:string**, **raca:string**, **corPelagem: string** e **peso:number**. Nele chame e popule todos os atributos pelo construtor como no exemplo em anexo:
 
-![image](https://trello.com/1/cards/6266e4aa5c0df7231a6bdd6f/attachments/6266e4aa5c0df7231a6bddf3/previews/6266e4aa5c0df7231a6bddfa/download/image.png)
-
 ---
 
 ## [M1S09] - Ex 6 - Modifiers e Construtores
