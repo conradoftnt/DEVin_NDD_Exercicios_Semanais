@@ -15,9 +15,11 @@ class Program
 
 Digite a opção: ");
 
-        var option = Console.ReadLine();
+        var opcao = Console.ReadLine();
 
-        switch (option)
+        Console.Write(Environment.NewLine);
+
+        switch (opcao)
         {
             case "1":
                 CadastrarProduto();
@@ -25,11 +27,35 @@ Digite a opção: ");
 
             default:
                 Console.Clear();
+                Environment.Exit(0);
                 break;
         }
     }
 
     static void CadastrarProduto()
     {
+        Console.Write("Digite o nome do produto a ser cadastrado: ");
+        string nome = Console.ReadLine();
+
+        Console.Write("Digite quantas unidades do produto estão disponíveis no estoque: ");
+        int qntEstoque = int.Parse(Console.ReadLine());
+
+        Console.Write("Digite o valor da compra do produto: ");
+        float vlrCompra = float.Parse(Console.ReadLine());
+
+        Console.Write("Digite o valor de venda do produto: ");
+        float vlrVenda = float.Parse(Console.ReadLine());
+
+        Guid productId = Guid.NewGuid();
+
+        Console.Write(@$"
+        Produto cadastrado com sucesso!
+
+        ID: {productId};
+        Nome: Produto {nome}; 
+        Qtd: {qntEstoque};
+        R$ Compra: R$ {vlrCompra};
+        R$ Venda: {vlrVenda};”.
+        ");
     }
 }
