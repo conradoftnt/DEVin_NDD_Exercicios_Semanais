@@ -1,4 +1,4 @@
-namespace GeraEstoque.Screen
+namespace GeraEstoque.Screens
 {
     public static class ListarProdutosScreen
     {
