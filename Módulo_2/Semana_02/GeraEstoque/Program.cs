@@ -3,7 +3,14 @@ class Program
 {
     static void Main(string[] args)
     {
+        Menu();
+    }
+
+    static void Menu()
+    {
+        Console.Write(Environment.NewLine);
         Console.WriteLine("Seja bem vindo");
+        Console.Write(Environment.NewLine);
 
         Console.Write(@"Seja bem vindo ao GeraEstoque 1.0
 ----------------------------------------
@@ -25,9 +32,25 @@ Digite a opção: ");
                 CadastrarProduto();
                 break;
 
-            default:
+            case "2":
+                Menu();
+                break;
+
+            case "3":
+                Menu();
+                break;
+
+            case "4":
+                Menu();
+                break;
+
+            case "0":
                 Console.Clear();
                 Environment.Exit(0);
+                break;
+
+            default:
+                Menu();
                 break;
         }
     }
@@ -48,14 +71,18 @@ Digite a opção: ");
 
         Guid productId = Guid.NewGuid();
 
-        Console.Write(@$"
-        Produto cadastrado com sucesso!
+        Console.WriteLine(@$"Produto cadastrado com sucesso!
 
-        ID: {productId};
-        Nome: Produto {nome}; 
-        Qtd: {qntEstoque};
-        R$ Compra: R$ {vlrCompra};
-        R$ Venda: {vlrVenda};”.
-        ");
+ID: {productId};
+Nome: Produto {nome}; 
+Qtd: {qntEstoque};
+R$ Compra: R$ {vlrCompra};
+R$ Venda: {vlrVenda};”.");
+
+        Console.Write(Environment.NewLine);
+        Console.Write("Pressione qualquer tecla para voltar ao menu principal.");
+        Console.ReadKey();
+        Console.Write(Environment.NewLine);
+        Menu();
     }
 }
