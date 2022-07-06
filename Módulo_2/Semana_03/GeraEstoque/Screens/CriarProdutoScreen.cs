@@ -6,7 +6,7 @@ namespace GeraEstoque.Screens
         {
 
             Console.Write("Digite o nome do produto a ser cadastrado: ");
-            string nome = Console.ReadLine();
+            string? nome = Console.ReadLine();
 
             Console.Write("Digite quantas unidades do produto estão disponíveis no estoque: ");
             int qntEstoque = int.Parse(Console.ReadLine());
