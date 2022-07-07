@@ -1,9 +1,12 @@
 ﻿namespace GeraEstoque;
 using GeraEstoque.Screens;
+using GeraEstoque.Repositories;
 class Program
 {
+    public static ProdutoRepository? ListaProdutos;
     static void Main(string[] args)
     {
-        MenuScreen.Iniciar();
+        ListaProdutos = new ProdutoRepository();
+        MenuScreen.Iniciar(ListaProdutos);
     }
 }

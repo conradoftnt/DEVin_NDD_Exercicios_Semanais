@@ -1,8 +1,11 @@
+using GeraEstoque.Repositories;
+using GeraEstoque.Models;
+
 namespace GeraEstoque.Screens
 {
     public static class CriarProdutoScreen
     {
-        public static void Iniciar()
+        public static void Iniciar(ProdutoRepository ListaProdutos)
         {
 
             Console.Write("Digite o nome do produto a ser cadastrado: ");
@@ -19,13 +22,9 @@ namespace GeraEstoque.Screens
 
             Guid productId = Guid.NewGuid();
 
-            Console.WriteLine(@$"Produto cadastrado com sucesso!
+            Produto NewProduto = new Produto(nome, qntEstoque, vlrCompra, vlrVenda);
 
-ID: {productId};
-Nome: Produto {nome}; 
-Qtd: {qntEstoque};
-R$ Compra: R$ {vlrCompra};
-R$ Venda: {vlrVenda};”.");
+            ProdutoRepository.ListaProdutos.Add(NewProduto);
 
             Console.Write(Environment.NewLine);
             Console.Write("Pressione qualquer tecla para voltar ao menu principal.");

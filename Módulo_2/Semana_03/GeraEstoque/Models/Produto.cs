@@ -12,7 +12,7 @@ namespace GeraEstoque.Models
         {
         }
 
-        public Produto(string newName, int newQuant, float newCusto, float newVenda)
+        public Produto(string? newName, int newQuant, float newCusto, float newVenda)
         {
             Id = Guid.NewGuid();
             Nome = newName;

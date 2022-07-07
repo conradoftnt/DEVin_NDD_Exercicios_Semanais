@@ -1,8 +1,10 @@
+using GeraEstoque.Repositories;
+
 namespace GeraEstoque.Screens
 {
     public static class MenuScreen
     {
-        public static void Iniciar()
+        public static void Iniciar(ProdutoRepository ListaProdutos)
         {
             Console.Write(Environment.NewLine);
             Console.WriteLine("Seja bem vindo");
@@ -25,20 +27,20 @@ Digite a opção: ");
             switch (opcao)
             {
                 case "1":
-                    CriarProdutoScreen.Iniciar();
-                    Iniciar();
+                    CriarProdutoScreen.Iniciar(ListaProdutos);
+                    Iniciar(ListaProdutos);
                     break;
 
                 case "2":
-                    Iniciar();
+                    Iniciar(ListaProdutos);
                     break;
 
                 case "3":
-                    Iniciar();
+                    Iniciar(ListaProdutos);
                     break;
 
                 case "4":
-                    Iniciar();
+                    Iniciar(ListaProdutos);
                     break;
 
                 case "0":
@@ -47,7 +49,7 @@ Digite a opção: ");
                     break;
 
                 default:
-                    Iniciar();
+                    Iniciar(ListaProdutos);
                     break;
             }
         }
