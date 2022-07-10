@@ -9,15 +9,12 @@ namespace GeraEstoque.Screens
             Console.Write(Environment.NewLine);
             Console.WriteLine("Seja bem vindo ao GeraEstoque 1.0");
             Console.WriteLine("----------------------------------------");
-            Console.Write(Environment.NewLine);
-
-            Console.Write(@"
-1 - Cadastrar produto
+            Console.Write(@"1 - Cadastrar produto
 2 - Consultar produto
 3 - Modificar produto
 4 - Excluir produto
 5 - Listar todos os produtos
-0  Sair
+0 - Sair
 
 Digite a opção: ");
 
@@ -29,18 +26,6 @@ Digite a opção: ");
             {
                 case "1":
                     CriarProdutoScreen.Iniciar(ListaProdutos);
-                    Iniciar(ListaProdutos);
-                    break;
-
-                case "2":
-                    Iniciar(ListaProdutos);
-                    break;
-
-                case "3":
-                    Iniciar(ListaProdutos);
-                    break;
-
-                case "4":
                     Iniciar(ListaProdutos);
                     break;
 
