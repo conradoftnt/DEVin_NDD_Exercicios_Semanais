@@ -30,6 +30,7 @@ namespace GeraEstoque.Screens
             Console.Write("Pressione qualquer tecla para voltar ao menu principal.");
             Console.ReadKey();
             Console.Write(Environment.NewLine);
+            Console.Clear();
         }
     }
 }
