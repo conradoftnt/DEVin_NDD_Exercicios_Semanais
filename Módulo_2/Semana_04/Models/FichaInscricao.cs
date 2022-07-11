@@ -1,6 +1,6 @@
 namespace Semana_04.Models;
 
-class FichaInscricao
+public class FichaInscricao
 {
     public string? Nome;
     public int Idade;
