@@ -1,68 +1,62 @@
 using Semana_04.Models;
 
-namespace Semana_04.Screens
+namespace Semana_04.Screens;
+
+public static class MenuScreen
 {
-    public static class MenuScreen
+
+    public static void Start(FichaInscricao Usuario)
     {
 
-        public static void Start()
+        Console.Write(@"MENU DE OPÇÕES DO USUÁRIO 
+
+1 - Mostrar formatação da ficha.
+2 - Editar curso do usuário.
+3 - Mostrar lista de cursos do usuário.
+0 - Sair do programa.
+
+Escolha uma das opções: ");
+        string? opcao = Console.ReadLine();
+        switch (opcao)
         {
-            Console.WriteLine("Bem-Vindo ao exercício da semana 04 do módulo 02 do curso DEVin na turma NDD");
-            Console.WriteLine("-----------------------------------------------------------------------------");
-            Console.Write(Environment.NewLine);
-            Console.WriteLine("Preencha a ficha do usuário.");
-            Console.Write(Environment.NewLine);
+            case "1":
+                FormatacaoScreen.Start(Usuario);
+                RetornaMenu(Usuario);
+                break;
 
-            Console.Write("Nome: ");
-            string? Nome = Console.ReadLine();
+            case "2":
+                Console.Clear();
+                Console.Write("Digite o novo curso do usuário: ");
+                string? NewCurso = Console.ReadLine();
+                Usuario.AdicionaCurso(NewCurso);
+                Console.Clear();
+                Start(Usuario);
+                break;
 
-            Console.Write("Curso: ");
-            string? Curso = Console.ReadLine();
+            case "3":
+                Console.Clear();
+                Usuario.MostraCursos();
+                RetornaMenu(Usuario);
+                break;
 
-            Console.Write("Escolaridade: ");
-            string? Escolaridade = Console.ReadLine();
+            case "0":
+                Console.Clear();
+                Environment.Exit(0);
+                break;
 
-            Console.Write("Dia de nascimento: ");
-            int DiaNascimento = int.Parse(Console.ReadLine());
-
-            Console.Write("Mês de nascimento: ");
-            int MesNascimento = int.Parse(Console.ReadLine());
-
-            Console.Write("Ano de nascimento: ");
-            int AnoNascimento = int.Parse(Console.ReadLine());
-
-            DateTime DataNascimento = new DateTime(AnoNascimento, MesNascimento, DiaNascimento);
-
-            Console.Write("Valor do curso: ");
-            float ValorCurso = float.Parse(Console.ReadLine());
-
-            Console.Write("Valor do desconto: ");
-            float ValorDesconto = float.Parse(Console.ReadLine());
-
-            Console.Write("Valor da multa: ");
-            float ValorMulta = float.Parse(Console.ReadLine());
-
-            Console.Write(Environment.NewLine);
-            Console.WriteLine("-----------------------------------------------------------------------------");
-            Console.Write(Environment.NewLine);
-
-            FichaInscricao Usuario = new FichaInscricao(Nome, Curso, Escolaridade, DataNascimento, ValorCurso, ValorDesconto, ValorMulta);
-
-            if (Usuario.ValorDesconto > 0)
-            {
-                if (Usuario.Idade < 18)
-                {
-                    Console.WriteLine(FormatacaoTexto.Formatacao(Usuario.Nome, Usuario.Curso, Usuario.ValorCurso, Usuario.ValorDesconto, Usuario.Idade));
-                }
-                else
-                {
-                    Console.WriteLine(FormatacaoTexto.Formatacao(Usuario.Nome, Usuario.Curso, Usuario.ValorCurso, Usuario.ValorDesconto));
-                }
-            }
-            else
-            {
-                Console.WriteLine(FormatacaoTexto.Formatacao(Usuario.Nome, Usuario.Curso, Usuario.ValorCurso));
-            }
+            default:
+                Console.Clear();
+                Start(Usuario);
+                break;
         }
+    }
+
+    private static void RetornaMenu(FichaInscricao Usuario)
+    {
+        Console.Write(Environment.NewLine);
+        Console.Write("Precione qualquer tecla para voltar ao meno do usuário.");
+        Console.ReadKey();
+        Console.Clear();
+        MenuScreen.Start(Usuario);
     }
 }
