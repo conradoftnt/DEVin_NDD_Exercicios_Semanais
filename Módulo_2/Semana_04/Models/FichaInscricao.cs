@@ -16,9 +16,20 @@ class FichaInscricao
         Nome = NNome;
         Curso = NCurso;
         Escolaridade = NEscolaridade;
+
         DataNascimento = NDataNascimento;
+        CalcularIdade();
+
         ValorCurso = NValorCurso;
         ValorDesconto = NValorDesconto;
         ValorMulta = NValorMulta;
+
+
+    }
+
+    private void CalcularIdade()
+    {
+        int DataAtual = int.Parse(DateTime.Now.ToString("yyyyMMdd"));
+        Idade = (DataAtual - int.Parse(DataNascimento.ToString("yyyyMMdd")) / 10000);
     }
 }
