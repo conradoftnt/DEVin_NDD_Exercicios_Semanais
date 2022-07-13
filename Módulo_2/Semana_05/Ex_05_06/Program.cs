@@ -6,7 +6,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Funcionario funcionario = new Funcionario("Teste Funcionario", "00001");
+        Funcionario funcionario = new Funcionario("Teste", "00001");
 
         VerificaNulo(funcionario);
 
@@ -14,10 +14,11 @@ internal class Program
         {
             try
             {
-                if (Object is not null)
+                if (Object is null)
                 {
-                    Console.WriteLine(Object.Nome);
+                    throw new Exception("Erro ao instanciar funcionario");
                 }
+                Console.WriteLine(Object.Nome);
             }
             catch (Exception Erro)
             {
