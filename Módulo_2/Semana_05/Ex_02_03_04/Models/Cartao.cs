@@ -13,7 +13,7 @@ internal class Cartao
         ValorTaxa = valorTaxa;
     }
 
-    public double VerificarValorTaxaCartao()
+    public virtual double VerificarValorTaxaCartao()
     {
         return Saldo * ValorTaxa;
     }
