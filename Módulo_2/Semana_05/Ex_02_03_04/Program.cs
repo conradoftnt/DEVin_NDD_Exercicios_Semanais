@@ -16,5 +16,15 @@ internal class Program
 
         VT vt = new VT("Elo", 4000, 0.06);
         vt.VerificarValorTaxaCartao();
+
+
+        // Upcasting
+        Cartao novoCartao = new VR("Bandeira", 1, 1);
+        Console.WriteLine(novoCartao is Cartao);
+
+        // Downcasting
+        VR cartao_vr = novoCartao as VR;
+        Console.WriteLine(cartao_vr is VR);
+
     }
 }
