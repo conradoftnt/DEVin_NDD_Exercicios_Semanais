@@ -10,8 +10,8 @@ CREATE TABLE Cargos (
 CREATE TABLE Gestores (
 	id_gestor int PRIMARY KEY IDENTITY (1,1),
 	nome_gestor VARCHAR(200) NOT NULL,
-	gestor_id int NOT NULL,
-	CONSTRAINT fk_Gestor_Cargo FOREIGN KEY (gestor_id) REFERENCES Gestores(id_gestor)
+	cargo_id int NOT NULL,
+	CONSTRAINT fk_Gestor_Cargo FOREIGN KEY (cargo_id) REFERENCES Cargos(id_cargo)
 );
 
 CREATE TABLE Empregados (
